@@ -44,7 +44,7 @@ main().then(()=>console.log("Mongodb is successfully connected.")).catch(err => 
 async function main() {
   await mongoose.connect(process.env.DB_URL);
   app.get('/', (req, res) => {
-    res.send('E-commerce Server is running......!');
+    res.send('Grocery Store Server is running......!');
   })
 }
 
